@@ -1,0 +1,1 @@
+sudo sudo docker build -t tbot:latest -f Docker/Dockerfile .

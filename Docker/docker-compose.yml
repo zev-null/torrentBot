@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  tbot:
+    image: tbot:latest
+    environment:
+    #токен бота тг
+      - TELEGRAM_BOT_TOKEN=
+      - DATA_DIR=/opt/bot/dlna/
+      - ALLOWED_USERS=
+    volumes:
+      - /opt/bot/dlna/:/opt/bot/dlna/ #указание куда будут грузиться файлы на локальной машине
